@@ -798,3 +798,10 @@ android_hardware_qtiaudio_config_default {
         },
     },
 }
+
+install_symlink {
+    name: "CneApp.libvndfwk_detect_jni.qti_vendor_symlink",
+    vendor: true,
+    installed_location: "app/CneApp/lib/arm64/libvndfwk_detect_jni.qti_vendor.so",
+    symlink_target: "/vendor/lib64/libvndfwk_detect_jni.qti_vendor.so",
+}
