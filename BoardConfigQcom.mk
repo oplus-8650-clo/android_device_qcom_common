@@ -13,6 +13,9 @@ TARGET_USES_ION := true
 # since they are not used on 8998 and up
 TARGET_MOUNT_POINTS_SYMLINKS ?= false
 
+# Pass board platform to kernel build
+TARGET_KERNEL_ADDITIONAL_FLAGS += TARGET_BOARD_PLATFORM=$(TARGET_BOARD_PLATFORM)
+
 # SEPolicy
 ifneq ($(TARGET_EXCLUDE_QCOM_SEPOLICY),true)
 include device/qcom/sepolicy_vndr/SEPolicy.mk
