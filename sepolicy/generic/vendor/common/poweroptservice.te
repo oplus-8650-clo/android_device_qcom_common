@@ -71,3 +71,5 @@ allow vendor_hal_poweroptservice_qti {appdomain}:process getpgid;
 r_dir_file(vendor_hal_poweroptservice_qti, appdomain);
 
 allow vendor_hal_poweroptservice_qti proc_stat:file r_file_perms;
+
+allow vendor_hal_poweroptservice_qti system_server:dir search;
