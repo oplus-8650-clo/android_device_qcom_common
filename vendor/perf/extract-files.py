@@ -18,6 +18,7 @@ from extract_utils_qti.module import ExtractUtilsQTIModule, QTIComponentType
 
 namespace_imports = [
     'hardware/qcom/display',
+    'vendor/qcom/opensource/commonsys-intf/display',
 ]
 
 blob_fixups: blob_fixups_user_type = {

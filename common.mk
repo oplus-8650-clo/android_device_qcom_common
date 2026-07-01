@@ -183,6 +183,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# Soong namespace
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/dataservices \
+    vendor/qcom/opensource/data-ipa-cfg-mgr
+
 # SoC
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI

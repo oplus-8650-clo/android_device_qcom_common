@@ -3,6 +3,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/commonsys/display \
+    vendor/qcom/opensource/commonsys-intf/display
+
+$(call soong_config_set,qtidisplay,headers_namespace,vendor/qcom/opensource/commonsys-intf/display)
+
 # Include display HAL makefiles.
 ifeq ($(TARGET_FWK_SUPPORTS_FULL_VALUEADDS),true)
 include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk

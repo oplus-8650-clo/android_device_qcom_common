@@ -47,7 +47,9 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.supplicant-V1-ndk.vendor \
     vendor.qti.hardware.wifi.supplicant-V1-ndk.vendor
 
-PRODUCT_SOONG_NAMESPACES += hardware/qcom/wlan/qcwcn
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/wlan \
+    hardware/qcom/wlan/qcwcn
 
 # For mk config
 CONFIG_IEEE80211AC := true
