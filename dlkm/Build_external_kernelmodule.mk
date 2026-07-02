@@ -207,7 +207,7 @@ endif
 
 else # Use old full prebuilt kernel platform method
 
-$(error Old full prebulit kernel platform is deprecated. Upgrade to newer kernel platform which has KERNEL_KIT support)
+$(info Old full prebulit kernel platform is deprecated. Upgrade to newer kernel platform which has KERNEL_KIT support)
 
 endif
 
