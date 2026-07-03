@@ -27,4 +27,6 @@ ifneq ($(AOSPA_BUILD),)
     SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
         $(COMMON_SEPOLICY_PATH)/aospa/private \
         $(COMMON_SEPOLICY_PATH)/pixel/private
+    SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+        $(COMMON_SEPOLICY_PATH)/pixel/public
 endif
