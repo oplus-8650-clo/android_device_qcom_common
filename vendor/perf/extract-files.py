@@ -5,7 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-from extract_utils.fixups_blob import blob_fixup, blob_fixups_user_type
 from extract_utils.fixups_lib import (
     lib_fixup_remove,
     lib_fixups,
@@ -20,13 +19,6 @@ namespace_imports = [
     'hardware/qcom/display',
     'vendor/qcom/opensource/commonsys-intf/display',
 ]
-
-blob_fixups: blob_fixups_user_type = {
-    'vendor/lib64/libmemperfd.so': blob_fixup()
-        .replace_needed('libprotobuf-cpp-lite-21.7.so', 'libprotobuf-cpp-lite-21.12.so'),
-    'vendor/lib64/libprekill.so': blob_fixup()
-        .replace_needed('libprotobuf-cpp-full-21.7.so', 'libprotobuf-cpp-full-21.12.so'),
-}  # fmt: skip
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
@@ -45,7 +37,6 @@ module = ExtractUtilsQTIModule(
     'perf',
     QTIComponentType.VENDOR,
     namespace_imports=namespace_imports,
-    blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
 )
 
