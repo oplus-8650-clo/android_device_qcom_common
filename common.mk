@@ -185,6 +185,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespace
 PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/u \
     vendor/qcom/opensource/dataservices \
     vendor/qcom/opensource/data-ipa-cfg-mgr
 

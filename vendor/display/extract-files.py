@@ -12,7 +12,7 @@ from extract_utils_qti.fixups_lib import lib_fixup_vendor_suffix
 from extract_utils_qti.module import ExtractUtilsQTIModule, QTIComponentType
 
 namespace_imports = [
-    'hardware/qcom/display/libdebug',
+    'hardware/qcom/display/u/libdebug',
 ]
 
 lib_fixups: lib_fixups_user_type = {
