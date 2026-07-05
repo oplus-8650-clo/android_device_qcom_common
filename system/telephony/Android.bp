@@ -1,0 +1,9 @@
+soong_namespace {
+}
+
+install_symlink {
+    name: "libSurfaceUtil_jni_symlink",
+    system_ext_specific: true,
+    installed_location: "lib64/libSurfaceUtil_jni.so",
+    symlink_target: "/system_ext/priv-app/ims/lib/arm64/libSurfaceUtil_jni.so",
+}
