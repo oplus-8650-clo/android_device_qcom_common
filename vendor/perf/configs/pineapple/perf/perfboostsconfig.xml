@@ -864,7 +864,7 @@
 
     <!-- Doze hint -->
     <Config
-            Id="0x00001053" Enable="true" Timeout="0" Target="pineapple"
+            Id="0x00001053" Enable="true" Timeout="0" Target="pineapple,cliffs"
             Resources="0x42C34000, 1" />
 
     <!--FPS Update from Framework-->
