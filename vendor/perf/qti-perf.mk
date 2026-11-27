@@ -8,6 +8,11 @@ PRODUCT_SOONG_NAMESPACES += \
 
 TARGET_PERF_COMPONENT_VARIANT := perf
 
+# Enable interaction boost for pineapple
+ifeq ($(TARGET_BOARD_PLATFORM),pineapple)
+TARGET_POWERHAL_ENABLE_INTERACTION_BOOST := true
+endif
+
 # Configs
 # Use the configs for TARGET_BOARD_PLATFORM unless otherwise specified
 ifeq ($(TARGET_BOARD_PLATFORM)$(TARGET_BOARD_SUFFIX),bengal_515)
